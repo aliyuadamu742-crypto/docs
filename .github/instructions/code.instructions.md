@@ -58,7 +58,7 @@ npm run test:search       # requires Elasticsearch running
 For the `content-linter` suite, you can optionally scope linting to changed files by setting `DIFF_FILES` (space-separated list) or `DIFF_FILE` (path to a text file containing a space-separated list of changed files). Without these, the linter runs against all content:
 
 ```shell
-DIFF_FILES="content/foo.md content/bar.md" npm test -- src/content-linter/tests/
+DIFF_FILES="content/foo.md content/bar.md" npm test -- src/content-linter/tests/ 
 ```
 
 All other suites (e.g., `versions`, `redirects`, `rest`, `frame`, `content-render`, `graphql`, etc.) can be run without special environment variables.
